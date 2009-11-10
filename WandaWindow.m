@@ -138,7 +138,10 @@
 			return;
 		}
 		else
+		{
 			xDirection = -abs(xDirection);
+			xLastSwapped = 0;
+		}
 	else if(newFrame.origin.x <= screenFrame.origin.x)
 		if(swimToHiding)
 		{
@@ -146,8 +149,10 @@
 			return;
 		}
 		else
+		{
 			xDirection = abs(xDirection);
-	
+			xLastSwapped = 0;
+		}	
 	if(newFrame.origin.y >= ((screenFrame.size.height + screenFrame.origin.y) - newFrame.size.height))
 		if(swimToHiding)
 		{
@@ -155,7 +160,10 @@
 			return;
 		}
 		else
+		{
 			yDirection = -abs(yDirection);
+			yLastSwapped = 0;
+		}
 	else if(newFrame.origin.y <= screenFrame.origin.y)
 		if(swimToHiding)
 		{
@@ -163,7 +171,10 @@
 			return;
 		}
 		else
+		{
 			yDirection = abs(yDirection);
+			yLastSwapped = 0;
+		}
 	
 	newFrame.origin.x += xDirection * (swimToHiding ? 3.5 : 1.0);
 	newFrame.origin.y += yDirection;
