@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
-		256AC3DA0F4B6AC300CF3369 /* ObjectiveWandaAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* ObjectiveWandaAppDelegate.m */; };
+		256AC3DA0F4B6AC300CF3369 /* WandaAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* WandaAppDelegate.m */; };
 		3507994010A9568F007E2EDA /* WandaWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 3507993F10A9568F007E2EDA /* WandaWindow.m */; };
 		3507997810A957C8007E2EDA /* WandaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3507997710A957C8007E2EDA /* WandaView.m */; };
 		35079B8610A96BD3007E2EDA /* wanda-flipped.png in Resources */ = {isa = PBXBuildFile; fileRef = 35079B8410A96BD3007E2EDA /* wanda-flipped.png */; };
@@ -24,9 +24,9 @@
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		256AC3D80F4B6AC300CF3369 /* ObjectiveWandaAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectiveWandaAppDelegate.h; sourceTree = "<group>"; };
-		256AC3D90F4B6AC300CF3369 /* ObjectiveWandaAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectiveWandaAppDelegate.m; sourceTree = "<group>"; };
-		256AC3F00F4B6AF500CF3369 /* ObjectiveWanda_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectiveWanda_Prefix.pch; sourceTree = "<group>"; };
+		256AC3D80F4B6AC300CF3369 /* WandaAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WandaAppDelegate.h; sourceTree = "<group>"; };
+		256AC3D90F4B6AC300CF3369 /* WandaAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WandaAppDelegate.m; sourceTree = "<group>"; };
+		256AC3F00F4B6AF500CF3369 /* Wanda_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wanda_Prefix.pch; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
@@ -37,8 +37,8 @@
 		35079B8410A96BD3007E2EDA /* wanda-flipped.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wanda-flipped.png"; sourceTree = "<group>"; };
 		35079B8510A96BD3007E2EDA /* wanda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wanda.png; sourceTree = "<group>"; };
 		35079D9C10A9898F007E2EDA /* Wanda.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Wanda.icns; sourceTree = "<group>"; };
-		8D1107310486CEB800E47090 /* ObjectiveWanda-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ObjectiveWanda-Info.plist"; sourceTree = "<group>"; };
-		8D1107320486CEB800E47090 /* Wanda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Wanda.app; path = build/Release/Wanda.app; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Wanda-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Wanda-Info.plist"; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* Wanda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wanda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +60,8 @@
 				3507997710A957C8007E2EDA /* WandaView.m */,
 				3507993E10A9568F007E2EDA /* WandaWindow.h */,
 				3507993F10A9568F007E2EDA /* WandaWindow.m */,
-				256AC3D80F4B6AC300CF3369 /* ObjectiveWandaAppDelegate.h */,
-				256AC3D90F4B6AC300CF3369 /* ObjectiveWandaAppDelegate.m */,
+				256AC3D80F4B6AC300CF3369 /* WandaAppDelegate.h */,
+				256AC3D90F4B6AC300CF3369 /* WandaAppDelegate.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -92,7 +92,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		29B97314FDCFA39411CA2CEA /* ObjectiveWanda */ = {
+		29B97314FDCFA39411CA2CEA /* Wanda */ = {
 			isa = PBXGroup;
 			children = (
 				080E96DDFE201D6D7F000001 /* Classes */,
@@ -101,13 +101,13 @@
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
-			name = ObjectiveWanda;
+			name = Wanda;
 			sourceTree = "<group>";
 		};
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				256AC3F00F4B6AF500CF3369 /* ObjectiveWanda_Prefix.pch */,
+				256AC3F00F4B6AF500CF3369 /* Wanda_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
 			name = "Other Sources";
@@ -119,7 +119,7 @@
 				35079D9C10A9898F007E2EDA /* Wanda.icns */,
 				35079B8410A96BD3007E2EDA /* wanda-flipped.png */,
 				35079B8510A96BD3007E2EDA /* wanda.png */,
-				8D1107310486CEB800E47090 /* ObjectiveWanda-Info.plist */,
+				8D1107310486CEB800E47090 /* Wanda-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
 			);
@@ -152,7 +152,7 @@
 			);
 			name = Wanda;
 			productInstallPath = "$(HOME)/Applications";
-			productName = ObjectiveWanda;
+			productName = Wanda;
 			productReference = 8D1107320486CEB800E47090 /* Wanda.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -161,10 +161,10 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ObjectiveWanda" */;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Wanda" */;
 			compatibilityVersion = "Xcode 3.1";
 			hasScannedForEncodings = 1;
-			mainGroup = 29B97314FDCFA39411CA2CEA /* ObjectiveWanda */;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* Wanda */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -194,7 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
-				256AC3DA0F4B6AC300CF3369 /* ObjectiveWandaAppDelegate.m in Sources */,
+				256AC3DA0F4B6AC300CF3369 /* WandaAppDelegate.m in Sources */,
 				3507994010A9568F007E2EDA /* WandaWindow.m in Sources */,
 				3507997810A957C8007E2EDA /* WandaView.m in Sources */,
 			);
@@ -232,10 +232,10 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = ObjectiveWanda_Prefix.pch;
-				INFOPLIST_FILE = "ObjectiveWanda-Info.plist";
+				GCC_PREFIX_HEADER = Wanda_Prefix.pch;
+				INFOPLIST_FILE = "Wanda-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
-				PRODUCT_NAME = ObjectiveWanda;
+				PRODUCT_NAME = Wanda;
 			};
 			name = Debug;
 		};
@@ -246,10 +246,10 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = ObjectiveWanda_Prefix.pch;
-				INFOPLIST_FILE = "ObjectiveWanda-Info.plist";
+				GCC_PREFIX_HEADER = Wanda_Prefix.pch;
+				INFOPLIST_FILE = "Wanda-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
-				PRODUCT_NAME = ObjectiveWanda;
+				PRODUCT_NAME = Wanda;
 			};
 			name = Release;
 		};
@@ -291,7 +291,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ObjectiveWanda" */ = {
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Wanda" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,

@@ -7,21 +7,21 @@
 			sepNavVisRange = "{0, 45}";
 		};
 	};
-	256AC3D80F4B6AC300CF3369 /* ObjectiveWandaAppDelegate.h */ = {
+	256AC3D80F4B6AC300CF3369 /* WandaAppDelegate.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1039, 765}}";
 			sepNavSelRange = "{675, 0}";
 			sepNavVisRange = "{0, 853}";
 		};
 	};
-	256AC3D90F4B6AC300CF3369 /* ObjectiveWandaAppDelegate.m */ = {
+	256AC3D90F4B6AC300CF3369 /* WandaAppDelegate.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1322, 351}}";
 			sepNavSelRange = "{778, 0}";
 			sepNavVisRange = "{170, 544}";
 		};
 	};
-	256AC3F00F4B6AF500CF3369 /* ObjectiveWanda_Prefix.pch */ = {
+	256AC3F00F4B6AF500CF3369 /* Wanda_Prefix.pch */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1039, 765}}";
 			sepNavSelRange = "{675, 0}";
@@ -98,24 +98,25 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 279547036;
-			PBXWorkspaceStateSaveDate = 279547036;
+			PBXPerProjectTemplateStateSaveDate = 279570011;
+			PBXWorkspaceStateSaveDate = 279570011;
 		};
 		perUserProjectItems = {
-			35079DA810A98A1A007E2EDA /* PBXTextBookmark */ = 35079DA810A98A1A007E2EDA /* PBXTextBookmark */;
-			359D73F810A98CAD00A9187D /* PlistBookmark */ = 359D73F810A98CAD00A9187D /* PlistBookmark */;
-			35AA629310A98BBF00E2CB46 /* PBXTextBookmark */ = 35AA629310A98BBF00E2CB46 /* PBXTextBookmark */;
-			35AA629410A98BBF00E2CB46 /* PBXTextBookmark */ = 35AA629410A98BBF00E2CB46 /* PBXTextBookmark */;
-			35AA629510A98BBF00E2CB46 /* PBXTextBookmark */ = 35AA629510A98BBF00E2CB46 /* PBXTextBookmark */;
-			35AA629610A98BBF00E2CB46 /* PBXTextBookmark */ = 35AA629610A98BBF00E2CB46 /* PBXTextBookmark */;
-			35AA629710A98BBF00E2CB46 /* PBXTextBookmark */ = 35AA629710A98BBF00E2CB46 /* PBXTextBookmark */;
-			35AA629810A98BBF00E2CB46 /* PBXTextBookmark */ = 35AA629810A98BBF00E2CB46 /* PBXTextBookmark */;
-			35AA629910A98BBF00E2CB46 /* PBXTextBookmark */ = 35AA629910A98BBF00E2CB46 /* PBXTextBookmark */;
-			35AA629A10A98BBF00E2CB46 /* PBXTextBookmark */ = 35AA629A10A98BBF00E2CB46 /* PBXTextBookmark */;
-			35AA629B10A98BBF00E2CB46 /* PBXBookmark */ = 35AA629B10A98BBF00E2CB46 /* PBXBookmark */;
-			35AA629C10A98BBF00E2CB46 /* PBXBookmark */ = 35AA629C10A98BBF00E2CB46 /* PBXBookmark */;
-			35AA629D10A98BBF00E2CB46 /* PBXBookmark */ = 35AA629D10A98BBF00E2CB46 /* PBXBookmark */;
-			35AC6C2B10A98C8F0014D609 /* PlistBookmark */ = 35AC6C2B10A98C8F0014D609 /* PlistBookmark */;
+			35079DA810A98A1A007E2EDA = 35079DA810A98A1A007E2EDA /* PBXTextBookmark */;
+			3573E5BC10A9E6000086F0EE = 3573E5BC10A9E6000086F0EE /* PlistBookmark */;
+			359D73F810A98CAD00A9187D = 359D73F810A98CAD00A9187D /* PlistBookmark */;
+			35AA629310A98BBF00E2CB46 = 35AA629310A98BBF00E2CB46 /* PBXTextBookmark */;
+			35AA629410A98BBF00E2CB46 = 35AA629410A98BBF00E2CB46 /* PBXTextBookmark */;
+			35AA629510A98BBF00E2CB46 = 35AA629510A98BBF00E2CB46 /* PBXTextBookmark */;
+			35AA629610A98BBF00E2CB46 = 35AA629610A98BBF00E2CB46 /* PBXTextBookmark */;
+			35AA629710A98BBF00E2CB46 = 35AA629710A98BBF00E2CB46 /* PBXTextBookmark */;
+			35AA629810A98BBF00E2CB46 = 35AA629810A98BBF00E2CB46 /* PBXTextBookmark */;
+			35AA629910A98BBF00E2CB46 = 35AA629910A98BBF00E2CB46 /* PBXTextBookmark */;
+			35AA629A10A98BBF00E2CB46 = 35AA629A10A98BBF00E2CB46 /* PBXTextBookmark */;
+			35AA629B10A98BBF00E2CB46 = 35AA629B10A98BBF00E2CB46 /* PBXBookmark */;
+			35AA629C10A98BBF00E2CB46 = 35AA629C10A98BBF00E2CB46 /* PBXBookmark */;
+			35AA629D10A98BBF00E2CB46 = 35AA629D10A98BBF00E2CB46 /* PBXBookmark */;
+			35F8A30110A9E65C00D3B2B7 /* PlistBookmark */ = 35F8A30110A9E65C00D3B2B7 /* PlistBookmark */;
 		};
 		sourceControlManager = 3507993910A955F9007E2EDA /* Source Control */;
 		userBuildSettings = {
@@ -212,20 +213,31 @@
 		vrLen = 45;
 		vrLoc = 0;
 	};
-	359D73F810A98CAD00A9187D /* PlistBookmark */ = {
+	3573E5BC10A9E6000086F0EE /* PlistBookmark */ = {
 		isa = PlistBookmark;
-		fRef = 8D1107310486CEB800E47090 /* ObjectiveWanda-Info.plist */;
+		fRef = 8D1107310486CEB800E47090 /* Wanda-Info.plist */;
 		fallbackIsa = PBXBookmark;
 		isK = 0;
 		kPath = (
 		);
 		name = "/Users/hortont/Desktop/ObjectiveWanda/ObjectiveWanda-Info.plist";
 		rLen = 0;
-		rLoc = 9223372036854775807;
+		rLoc = 9223372036854775808;
+	};
+	359D73F810A98CAD00A9187D /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Wanda-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/hortont/Desktop/ObjectiveWanda/ObjectiveWanda-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
 	};
 	35AA629310A98BBF00E2CB46 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 256AC3D90F4B6AC300CF3369 /* ObjectiveWandaAppDelegate.m */;
+		fRef = 256AC3D90F4B6AC300CF3369 /* WandaAppDelegate.m */;
 		name = "ObjectiveWandaAppDelegate.m: 18";
 		rLen = 0;
 		rLoc = 675;
@@ -235,7 +247,7 @@
 	};
 	35AA629410A98BBF00E2CB46 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 256AC3D80F4B6AC300CF3369 /* ObjectiveWandaAppDelegate.h */;
+		fRef = 256AC3D80F4B6AC300CF3369 /* WandaAppDelegate.h */;
 		name = "ObjectiveWandaAppDelegate.h: 18";
 		rLen = 0;
 		rLoc = 675;
@@ -285,7 +297,7 @@
 	};
 	35AA629910A98BBF00E2CB46 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 256AC3F00F4B6AF500CF3369 /* ObjectiveWanda_Prefix.pch */;
+		fRef = 256AC3F00F4B6AF500CF3369 /* Wanda_Prefix.pch */;
 		name = "ObjectiveWanda_Prefix.pch: 18";
 		rLen = 0;
 		rLoc = 675;
@@ -315,16 +327,16 @@
 		isa = PBXBookmark;
 		fRef = 35079B8510A96BD3007E2EDA /* wanda.png */;
 	};
-	35AC6C2B10A98C8F0014D609 /* PlistBookmark */ = {
+	35F8A30110A9E65C00D3B2B7 /* PlistBookmark */ = {
 		isa = PlistBookmark;
-		fRef = 8D1107310486CEB800E47090 /* ObjectiveWanda-Info.plist */;
+		fRef = 8D1107310486CEB800E47090 /* Wanda-Info.plist */;
 		fallbackIsa = PBXBookmark;
 		isK = 0;
 		kPath = (
 		);
-		name = "/Users/hortont/Desktop/ObjectiveWanda/ObjectiveWanda-Info.plist";
+		name = "/Users/hortont/Desktop/ObjectiveWanda/Wanda-Info.plist";
 		rLen = 0;
-		rLoc = 9223372036854775808;
+		rLoc = 9223372036854775807;
 	};
 	8D1107260486CEB800E47090 /* Wanda */ = {
 		activeExec = 0;
