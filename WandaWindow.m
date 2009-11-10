@@ -89,7 +89,7 @@
 		screenFrame = [[self screen] frame];
 	
 	// Occasionally come out of hiding
-	if(rand() % 10000 == 0 && swimToHiding && hid)
+	if(rand() % 2000 == 0 && swimToHiding && hid)
 	{
 		[wanda layer].opacity = 1.0;
 		swimToHiding = hid = NO;
@@ -170,9 +170,6 @@
 
 - (void)fishHid
 {
-	//NSRect newFrame = [self frame];
-	//newFrame.origin = NSMakePoint(-newFrame.size.width, -newFrame.size.height);
-	//[self setFrame:newFrame display:YES];
 	[wanda layer].opacity = 0.0;
 	hid = YES;
 }
