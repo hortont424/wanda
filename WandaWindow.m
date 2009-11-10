@@ -46,6 +46,11 @@
 		xDirection = (rand() % 2 ? -1 : 1) * 2;
 		yDirection = (rand() % 2 ? -1 : 1);
 		swimToHiding = hid = NO;
+		
+		// Generate a random initial position
+		NSRect screenFrame = [[self screen] visibleFrame];
+		[self setFrameOrigin:NSMakePoint(rand() % (int)(screenFrame.size.width - contentRect.size.width),
+										 rand() % (int)(screenFrame.size.height - contentRect.size.height))];
     }
     
     return self;
