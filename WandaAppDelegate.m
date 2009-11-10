@@ -1,5 +1,5 @@
 /*
- * ObjectiveWanda, the Cocoa port of GNOME Wanda
+ * Wanda, the Cocoa port of GNOME Wanda
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -17,9 +17,9 @@
  *
  */
 
-#import "ObjectiveWandaAppDelegate.h"
+#import "WandaAppDelegate.h"
 
-@implementation ObjectiveWandaAppDelegate
+@implementation WandaAppDelegate
 
 @synthesize window;
 
