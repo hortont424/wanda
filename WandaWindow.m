@@ -18,7 +18,7 @@
  */
 
 #import "WandaWindow.h"
-
+#import <QuartzCore/QuartzCore.h>
 
 @implementation WandaWindow
 
@@ -132,6 +132,7 @@
 	
 	// Don't go past the bounds of the display, unless we're trying to hide!!
 	if(newFrame.origin.x >= ((screenFrame.size.width + screenFrame.origin.x) - newFrame.size.width))
+	{
 		if(swimToHiding)
 		{
 			[self fishHid];
@@ -142,7 +143,9 @@
 			xDirection = -abs(xDirection);
 			xLastSwapped = 0;
 		}
+	}
 	else if(newFrame.origin.x <= screenFrame.origin.x)
+	{
 		if(swimToHiding)
 		{
 			[self fishHid];
@@ -152,8 +155,10 @@
 		{
 			xDirection = abs(xDirection);
 			xLastSwapped = 0;
-		}	
+		}
+	}
 	if(newFrame.origin.y >= ((screenFrame.size.height + screenFrame.origin.y) - newFrame.size.height))
+	{
 		if(swimToHiding)
 		{
 			[self fishHid];
@@ -164,7 +169,9 @@
 			yDirection = -abs(yDirection);
 			yLastSwapped = 0;
 		}
+	}
 	else if(newFrame.origin.y <= screenFrame.origin.y)
+	{
 		if(swimToHiding)
 		{
 			[self fishHid];
@@ -175,6 +182,7 @@
 			yDirection = abs(yDirection);
 			yLastSwapped = 0;
 		}
+	}
 	
 	newFrame.origin.x += xDirection * (swimToHiding ? 3.5 : 1.0);
 	newFrame.origin.y += yDirection;
