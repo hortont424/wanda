@@ -35,9 +35,12 @@
     {
 		[self setMovableByWindowBackground:NO];
 		[self setBackgroundColor:[NSColor clearColor]];
-		[self setLevel:NSFloatingWindowLevel];
 		[self setOpaque:NO];
 		[self setHasShadow:NO];
+		
+		// Float over all windows, don't react to Exposé
+		[self setLevel:NSScreenSaverWindowLevel];
+		[self setCollectionBehavior:NSWindowCollectionBehaviorStationary];
 		
 		// This MUST be set to the actual size of a single frame in the image.
 		[self setAspectRatio:NSMakeSize(90.0, 55.0)];
