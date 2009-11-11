@@ -18,6 +18,7 @@
  */
 
 #import "WandaWindow.h"
+#import "WandaController.h"
 #import <QuartzCore/QuartzCore.h>
 
 @implementation WandaWindow
@@ -54,27 +55,17 @@
 		NSRect screenFrame = [[self screen] visibleFrame];
 		[self setFrameOrigin:NSMakePoint(rand() % (int)(screenFrame.size.width - contentRect.size.width),
 										 rand() % (int)(screenFrame.size.height - contentRect.size.height))];
+		
+		// Update frame to proper size, start swimming timer
+		NSRect newFrame = [self frame];
+		newFrame.size.width = 36.0;
+		newFrame.size.height = ([self aspectRatio].height /
+								[self aspectRatio].width) * newFrame.size.width;
+		
+		[self setFrame:newFrame display:YES];
     }
     
     return self;
-}
-
-- (void)awakeFromNib
-{
-	NSRect newFrame = [self frame];
-	newFrame.size.width = 36.0;
-	newFrame.size.height = ([self aspectRatio].height /
-							[self aspectRatio].width) * newFrame.size.width;
-	
-	[self setFrame:newFrame display:YES];
-	
-	swimTimer = [NSTimer scheduledTimerWithTimeInterval:0.12
-												 target:self
-											   selector:@selector(updateFrame:)
-											   userInfo:nil
-												repeats:YES];
-	
-	[self updateFrame:nil];
 }
 
 - (void)mouseDown:(NSEvent *)event
@@ -82,15 +73,10 @@
 	swimToHiding = YES;
 	
 	// Update faster while we're running away
-	[swimTimer invalidate];
-	swimTimer = [NSTimer scheduledTimerWithTimeInterval:0.08
-												 target:self
-											   selector:@selector(updateFrame:)
-											   userInfo:nil
-												repeats:YES];
+	[(WandaController*)controller updateTimer:YES];
 }
 
-- (void)updateFrame:(id)userData
+- (void)updateFrame
 {
 	NSRect newFrame = [self frame];
 	NSRect screenFrame = [[self screen] visibleFrame];
@@ -112,12 +98,7 @@
 		xLastSwapped = yLastSwapped = 0;
 		
 		// Return to a normal update speed
-		[swimTimer invalidate];
-		swimTimer = [NSTimer scheduledTimerWithTimeInterval:0.12
-													 target:self
-												   selector:@selector(updateFrame:)
-												   userInfo:nil
-													repeats:YES];
+		[(WandaController*)controller updateTimer:NO];
 	}
 	
 	if(hid)

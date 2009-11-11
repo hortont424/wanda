@@ -18,21 +18,24 @@
  */
 
 #import "WandaView.h"
+#import "WandaWindow.h"
 
 #define FRAME_COUNT 8
 
 @implementation WandaView
 
-@synthesize backwards;
+@synthesize backwards, wandaFrame;
 
 - (id)initWithFrame:(NSRect)frame
 {
     self = [super initWithFrame:frame];
+	
     if (self)
 	{
         wandaFrame = 0;
     }
-    return self;
+    
+	return self;
 }
 
 - (void)awakeFromNib
@@ -41,8 +44,6 @@
 	wandaFlipped = [[NSImage alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForImageResource:@"wanda-flipped.png"]];
 	
 	[self updateImageSize];
-	
-	[NSTimer scheduledTimerWithTimeInterval:0.12 target:self selector:@selector(updateFrame:) userInfo:nil repeats:YES];
 }
 
 - (void)windowDidResize:(NSNotification *)notification
@@ -72,7 +73,7 @@
 	[[self window] invalidateShadow];
 }
 
-- (void)updateFrame:(id)userInfo
+- (void)updateFrame
 {
 	wandaFrame = (wandaFrame + 1) % FRAME_COUNT;
 	[self setNeedsDisplay:YES];

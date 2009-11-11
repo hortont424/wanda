@@ -15,6 +15,7 @@
 		35079D9D10A9898F007E2EDA /* Wanda.icns in Resources */ = {isa = PBXBuildFile; fileRef = 35079D9C10A9898F007E2EDA /* Wanda.icns */; };
 		35912EF310AA5F99002C2434 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35912EF210AA5F99002C2434 /* Quartz.framework */; };
 		35912EF510AA5F99002C2434 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35912EF410AA5F99002C2434 /* QuartzCore.framework */; };
+		3592D11410AB7A900041888B /* WandaController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3592D11310AB7A900041888B /* WandaController.m */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -38,6 +39,8 @@
 		35079D9C10A9898F007E2EDA /* Wanda.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Wanda.icns; sourceTree = "<group>"; };
 		35912EF210AA5F99002C2434 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 		35912EF410AA5F99002C2434 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3592D11210AB7A900041888B /* WandaController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WandaController.h; sourceTree = "<group>"; };
+		3592D11310AB7A900041888B /* WandaController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WandaController.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Wanda-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Wanda-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Wanda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wanda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -63,6 +66,8 @@
 				3507997710A957C8007E2EDA /* WandaView.m */,
 				3507993E10A9568F007E2EDA /* WandaWindow.h */,
 				3507993F10A9568F007E2EDA /* WandaWindow.m */,
+				3592D11210AB7A900041888B /* WandaController.h */,
+				3592D11310AB7A900041888B /* WandaController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -199,6 +204,7 @@
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				3507994010A9568F007E2EDA /* WandaWindow.m in Sources */,
 				3507997810A957C8007E2EDA /* WandaView.m in Sources */,
+				3592D11410AB7A900041888B /* WandaController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +280,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;

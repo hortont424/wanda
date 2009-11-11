@@ -23,15 +23,14 @@
 @interface WandaWindow : NSWindow
 {
 	IBOutlet WandaView * wanda;
+	IBOutlet id controller;
 	
 	int xDirection, yDirection;
 	int xLastSwapped, yLastSwapped;
 	bool swimToHiding, hid;
-	
-	NSTimer * swimTimer;
 }
 
-- (void)updateFrame:(id)userData;
+- (void)updateFrame;
 - (void)fishHid;
 
 @end

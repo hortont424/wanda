@@ -18,19 +18,17 @@
  */
 
 #import <Cocoa/Cocoa.h>
+#import "WandaWindow.h"
+#import "WandaView.h"
 
-
-@interface WandaView : NSView
+@interface WandaController : NSObject
 {
-	NSImage * wanda, * wandaFlipped;
-	int wandaFrame;
-	bool backwards;
+	IBOutlet WandaView * view;
+	IBOutlet WandaWindow * window;
+	
+	NSTimer * timer;
 }
 
-- (void)updateImageSize;
-- (void)updateFrame;
-
-@property (assign) bool backwards;
-@property (assign) int wandaFrame;
+- (void)updateTimer:(bool)fast;
 
 @end

@@ -17,20 +17,32 @@
  *
  */
 
-#import <Cocoa/Cocoa.h>
+#import "WandaController.h"
 
+@implementation WandaController
 
-@interface WandaView : NSView
+- (void)awakeFromNib
 {
-	NSImage * wanda, * wandaFlipped;
-	int wandaFrame;
-	bool backwards;
+	timer = nil;
+	[self updateTimer:NO];
 }
 
-- (void)updateImageSize;
-- (void)updateFrame;
+- (void)updateTimer:(bool)fast
+{
+	if(timer != nil)
+		[timer invalidate];
+	
+	timer = [NSTimer scheduledTimerWithTimeInterval:(fast ? 0.08 : 0.12)
+											 target:self
+										   selector:@selector(updateFrame:)
+										   userInfo:nil
+											repeats:YES];
+}
 
-@property (assign) bool backwards;
-@property (assign) int wandaFrame;
+- (void)updateFrame:(id)userData
+{
+	[window updateFrame];
+	[view updateFrame];
+}
 
 @end
