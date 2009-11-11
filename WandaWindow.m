@@ -77,6 +77,8 @@
 - (void)mouseDown:(NSEvent *)event
 {
 	swimToHiding = YES;
+	
+	// Update faster while we're running away
 	[swimTimer invalidate];
 	swimTimer = [NSTimer scheduledTimerWithTimeInterval:0.08
 												 target:self
@@ -96,13 +98,17 @@
 	// Occasionally come out of hiding
 	if(rand() % 2000 == 0 && swimToHiding && hid)
 	{
+		// Fade back in
 		[wanda layer].opacity = 1.0;
+		
 		swimToHiding = hid = NO;
 		newFrame.origin.x = 0;
 		newFrame.origin.y = (rand() % (int)(screenFrame.size.height - newFrame.size.height));
 		xDirection = abs(xDirection);
 		yDirection = abs(yDirection);
 		xLastSwapped = yLastSwapped = 0;
+		
+		// Return to a normal update speed
 		[swimTimer invalidate];
 		swimTimer = [NSTimer scheduledTimerWithTimeInterval:0.12
 													 target:self
@@ -194,7 +200,9 @@
 
 - (void)fishHid
 {
+	// Fade out
 	[wanda layer].opacity = 0.0;
+	
 	hid = YES;
 }
 
